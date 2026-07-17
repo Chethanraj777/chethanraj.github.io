@@ -363,7 +363,9 @@ padding:70px 30px;
 }
 
 .hero-content{
-gap:35px;
+grid-template-columns:1fr 320px;
+gap:30px;
+align-items:center;
 }
 }
 
@@ -384,6 +386,11 @@ margin:0 auto;
 
 .buttons{
 justify-content:center;
+}
+
+.hero-image{
+order:-1;
+margin-bottom:20px;
 }
 
 .hero-image img{
