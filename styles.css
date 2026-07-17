@@ -21,18 +21,22 @@ overflow-x:hidden;
 
 .hero{
 min-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
-url("banner.png");
-background-size:cover;
-background-position:center;
+position:relative;
 display:flex;
 flex-direction:column;
 justify-content:center;
 padding:80px 60px 60px;
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.75)),
+url("banner.png");
+background-repeat:no-repeat;
+background-position:center center;
+background-size:100% 100%;
 }
 
 .hero-content{
+position:relative;
+z-index:2;
 display:grid;
 grid-template-columns:minmax(0,1fr) minmax(260px,380px);
 align-items:center;
@@ -66,7 +70,7 @@ width:100%;
 max-width:100%;
 height:auto;
 max-height:420px;
-object-fit:cover;
+object-fit:contain;
 border-radius:26px;
 border:4px solid rgba(212,160,76,.35);
 box-shadow:0 20px 40px rgba(0,0,0,.42);
@@ -193,6 +197,8 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 padding-top:10px;
+position:relative;
+z-index:2;
 }
 
 .stat-card,
