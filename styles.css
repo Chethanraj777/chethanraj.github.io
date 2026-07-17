@@ -43,7 +43,9 @@ margin:0 auto;
 }
 
 .hero-text{
+width:100%;
 max-width:650px;
+min-width:0;
 padding:34px;
 background:rgba(8,8,8,.42);
 border:1px solid rgba(212,160,76,.18);
@@ -55,6 +57,7 @@ backdrop-filter:blur(10px);
 display:flex;
 justify-content:center;
 align-items:center;
+min-width:0;
 }
 
 .hero-image img{
@@ -123,8 +126,9 @@ text-shadow:0 6px 22px rgba(212,160,76,.18);
 }
 
 .typewriter{
-min-height:1.6em;
-position:relative;
+overflow-wrap:anywhere;
+word-break:break-word;
+line-height:1.5;
 }
 
 .hero h3{
